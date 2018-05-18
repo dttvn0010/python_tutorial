@@ -6,13 +6,11 @@ RED = 255, 0, 0
 screenX, screenY = 640, 480
 screen = pygame.display.set_mode((screenX, screenY))
 
-r = 40
-x = screenX/2
-y = r
-vy = 1
-
-def drawBall(x, y, r, color):
-    pygame.draw.ellipse(screen, color, pygame.Rect(x-r, y-r, 2*r, 2*r))
+sz = 80
+x = (screenX-sz)/2
+y = 0
+vy = 0
+a = 0.05
 
 clock = pygame.time.Clock()
 while True:
@@ -23,13 +21,12 @@ while True:
             sys.exit()
 
     screen.fill(WHITE)
-    drawBall(x, y, r, RED)
+    pygame.draw.ellipse(screen, RED, pygame.Rect(x, y, sz, sz))
     pygame.display.flip()
 
+    vy += a
     y += vy
     
-    if y + r > screenY:
-        vy = -1
-
-    if y < r:
-        vy = 1
+    if y + sz > screenY:
+        y = screenY - sz
+        vy = -vy
