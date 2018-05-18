@@ -37,7 +37,7 @@ class Bird():
         return False
 
 def drawBird(bird):
-    screen.blit(bird.image, bird.rect)    
+    screen.blit(bird.image, bird.rect)
 
 bird = Bird(pygame.Rect(300, 200, 40, 40), 0.05)
 pipes = []
