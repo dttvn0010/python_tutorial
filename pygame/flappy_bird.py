@@ -77,6 +77,6 @@ while True:
             height = random.randint(25, 250)
             lowerTop = height + random.randint(75, 250)
             pipes.append(pygame.Rect(screenX, 0, 10, height))
-            pipes.append(pygame.Rect(screenX, lowerTop, 10, screenX-lowerTop))
+            pipes.append(pygame.Rect(screenX, lowerTop, 10, screenY-lowerTop))
 
         pipes = [pipe for pipe in pipes if pipe.left >= 0]
