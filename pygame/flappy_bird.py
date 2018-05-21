@@ -4,9 +4,9 @@ WHITE = 255, 255, 255
 RED = 255, 0, 0
 GREEN = 0, 255, 0
 
+bird_size = 40
 x = 300
 y = 200
-sz = 40
 a = 0.05
 vy = 0
 
@@ -17,7 +17,7 @@ pygame.font.init()
 font = pygame.font.SysFont('Calibri', 40)
 
 image = pygame.image.load("bird.jpg")
-image = pygame.transform.scale(image, (sz, sz))
+image = pygame.transform.scale(image, (bird_size, bird_size))
 
 pipes = []
 frameNo = 0
@@ -39,8 +39,8 @@ while True:
             a = 0.05        
 
     for pipe in pipes:
-        check_rect = pygame.Rect(x+2, y+2, sz-4, sz-4)
-        
+        check_rect = pygame.Rect(x+2, y+2, bird_size-4, bird_size-4)
+
         if check_rect.colliderect(pipe):
             text = font.render('Game Over!', False, RED)
             screen.blit(text, (280, 220))
@@ -50,7 +50,7 @@ while True:
 
     if not finished:
         screen.fill(WHITE)
-        screen.blit(image, pygame.Rect(x, y, sz, sz))    
+        screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))    
 
         for pipe in pipes:
             pygame.draw.rect(screen, GREEN, pipe)
@@ -60,8 +60,8 @@ while True:
         vy += a
         y += vy
 
-        if y + sz > screenY:
-            y = screenY - sz
+        if y + bird_size > screenY:
+            y = screenY - bird_size
             vy = 0.0
 
         if y < 0:
