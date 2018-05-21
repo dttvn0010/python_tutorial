@@ -39,6 +39,8 @@ while True:
             a = 0.05        
 
     for pipe in pipes:
+        check_rect = pygame.Rect(x+2, y+2, sz-4, sz-4)
+        
         if check_rect.colliderect(pipe):
             text = font.render('Game Over!', False, RED)
             screen.blit(text, (280, 220))
@@ -47,11 +49,8 @@ while True:
             break
 
     if not finished:
-        draw_rect = pygame.Rect(x, y, sz, sz)
-        check_rect = pygame.Rect(x+2, y+2, sz-4, sz-4)
-        
         screen.fill(WHITE)
-        screen.blit(image, draw_rect)    
+        screen.blit(image, pygame.Rect(x, y, sz, sz))    
 
         for pipe in pipes:
             pygame.draw.rect(screen, GREEN, pipe)
