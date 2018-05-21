@@ -23,7 +23,7 @@ def convert2digit(x):
 
     return text
 
-def convert3digit(x):
+def convert(x):
     if x <= 10:
         return chuso[x]
 
