@@ -1,17 +1,19 @@
-import turtle
+from turtle import *
 
-turtle.fillcolor("yellow")
-turtle.begin_fill()
+fillcolor("yellow")
+begin_fill()
 
-turtle.forward(50)
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
+forward(50)
+left(90)
 
-turtle.end_fill()
+forward(50)
+left(90)
 
-turtle.done()
+forward(50)
+left(90)
+
+forward(50)
+left(90)
+
+end_fill()
+done()

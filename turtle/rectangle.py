@@ -1,12 +1,15 @@
-import turtle
+from turtle import *
 
-turtle.forward(100)
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
-turtle.forward(100)
-turtle.left(90)
-turtle.forward(50)
-turtle.left(90)
+forward(100)
+left(90)
 
-turtle.exitonclick()
+forward(50)
+left(90)
+
+forward(100)
+left(90)
+
+forward(50)
+left(90)
+
+done()

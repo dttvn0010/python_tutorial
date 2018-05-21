@@ -1,9 +1,7 @@
-import turtle 
-
-star = turtle.Turtle()
+from turtle import *
 
 for i in range(5):
-    star.forward(200)
-    star.right(144)
+    forward(200)
+    right(144)
 
-turtle.done()
+done()

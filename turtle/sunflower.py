@@ -4,15 +4,14 @@
 # http://www.deborahrfowler.com/PythonResources/PythonTurtle.html
 
 import math
-import turtle
+from turtle import *
 
-tina = turtle.Turtle()
-tina.shape("turtle")
-tina.color("black")
-tina.speed(0)
+shape("turtle")
+color("black")
+speed(0)
 
-def drawSunflower(t, numseeds, numpetals, angle, cspread):
-    t.fillcolor("orange")
+def drawSunflower(numseeds, numpetals, angle, cspread):
+    fillcolor("orange")
     phi = angle * (math.pi / 180.0)
    
     for i in range (numseeds + numpetals):
@@ -23,30 +22,30 @@ def drawSunflower(t, numseeds, numpetals, angle, cspread):
       y = r * math.sin(theta)
 
       # move the turtle and orient it correctly
-      t.penup()
-      t.goto(x, y)
-      t.setheading(i * angle)
-      t.pendown()
+      penup()
+      goto(x, y)
+      setheading(i * angle)
+      pendown()
 
       if i <  numseeds:
-        t.stamp()
+        stamp()
       else:
-        drawPetal(t)
+        drawPetal()
           
-def drawPetal(t):
-    t.fillcolor("yellow")
-    t.begin_fill()
-    t.right(20)
-    t.forward(70)
-    t.left(40)
-    t.forward(70)
-    t.left(140)
-    t.forward(70)
-    t.left(40)
-    t.forward(70)
-    t.end_fill()
+def drawPetal():
+    fillcolor("yellow")
+    begin_fill()
+    right(20)
+    forward(70)
+    left(40)
+    forward(70)
+    left(140)
+    forward(70)
+    left(40)
+    forward(70)
+    end_fill()
 
-drawSunflower(tina, 160, 40, 137.508, 4)
+drawSunflower(160, 40, 137.508, 4)
 
-tina.hideturtle()
-turtle.done()
+hideturtle()
+done()
