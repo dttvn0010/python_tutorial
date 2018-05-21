@@ -9,7 +9,7 @@ for line in fi:
     diem_tb = (diemhs1 + 2*diemhs2 + 3*diemhs3) / 6.0
     ds_lop.append((hoten, diemhs1, diemhs2, diemhs3, diem_tb))
 
-f.close()
+fi.close()
 
 fo = open('diem_trungbinh_output.csv', 'wt')
 for hocsinh in ds_lop:
