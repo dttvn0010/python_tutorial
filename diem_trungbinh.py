@@ -18,8 +18,3 @@ for hocsinh in ds_lop:
     f.write(line + '\n')
 
 f.close()
-
-
-
-
-
