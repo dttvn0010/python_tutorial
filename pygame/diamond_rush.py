@@ -1,7 +1,7 @@
 import pygame, sys, math
 
 WHITE = 255, 255, 255
-ORANGE = 255, 69, 0
+ORANGE = 255, 96, 0
 
 screenX, screenY = 640, 480
 screen = pygame.display.set_mode((screenX, screenY))
@@ -13,10 +13,28 @@ img_size = 24
 image = pygame.image.load("diamond.png")
 image = pygame.transform.scale(image, (img_size, img_size))
 
-rod = 40
+rod = rod_min = 40
+rod_max = 500
+
 angle = 0
 score = 0
 diamonds = [(80, 400), (240, 400), (400,400), (560, 400), (160,320), (320,320), (480, 320), (240, 240), (400,240), (320, 160)]
+
+def draw_rod(x, y, phi, caught):
+    pygame.draw.line(screen, ORANGE, (screenX/2, 0), (x, y), 3)
+    
+    dx = img_size/2 * math.cos(phi)
+    dy = img_size/2 * math.sin(phi)
+
+    if caught:
+        screen.blit(image, pygame.Rect(x + dx - img_size/2, y + dy - img_size/2, img_size, img_size))
+
+    point1 = (x - dy, y + dx)
+    point2 = (x - dy + 2*dx, y + dx + 2*dy)
+    point3 = (x + dy, y - dx)
+    point4 = (x + dy + 2*dx, y - dx + 2*dy)
+    pygame.draw.lines(screen, ORANGE, False, (point4, point3, point1, point2), 3)
+
 
 clock = pygame.time.Clock()
 state = 'searching'
@@ -36,10 +54,10 @@ while True:
     y = rod * math.sin(phi)
     
     if state == 'searching':
+        caught = False
         angle += 1
         
-    elif state == 'reaching':
-        caught = False        
+    elif state == 'reaching':        
         for point in diamonds:
             if abs(x - point[0]) + abs(y - point[1]) <= img_size/2:
                 caught = True
@@ -47,27 +65,24 @@ while True:
                 break
             
         rod += 5    
-        if rod >= 500 or caught:
+        if rod >= rod_max or caught:
             state = 'returning'
           
     elif state == 'returning':
         rod -= 5
-        if rod <= 40:
+        if rod <= rod_min:
             if caught:
                 score += 1
                 
-            rod = 40
+            rod = rod_min
             state = 'searching'
             
     screen.fill(WHITE)
     
     for (xi, yi) in diamonds:
         screen.blit(image, pygame.Rect(xi - img_size/2, yi - img_size/2, img_size, img_size))
-
-    pygame.draw.line(screen, ORANGE, (screenX/2, 0), (x, y), 3)
     
-    if state == 'returning' and caught:
-        screen.blit(image, pygame.Rect(x - img_size/2, y - img_size/2, img_size, img_size))
+    draw_rod(x, y, phi, caught)
 
     score_text = font.render("Score : " + str(score), False, ORANGE)
     screen.blit(score_text, (500, 30))

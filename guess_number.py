@@ -1,7 +1,7 @@
 low = 0
 high = 1000
 
-print('Bạn hãy nghĩ trong đầu một số trong phạm vi từ 0 đến 1000, sau đó trả lời các câu hỏi sau.')
+print('Bạn hãy nghĩ một số trong phạm vi từ 0 đến 1000, sau đó trả lời các câu hỏi sau.')
 
 for i in range(10):
     mid = (low + high) // 2
