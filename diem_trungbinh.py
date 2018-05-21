@@ -1,7 +1,7 @@
 ds_lop = []
 
-f = open('diem_trungbinh_input.csv')
-for line in f:
+fi = open('diem_trungbinh_input.csv')
+for line in fi:
     hoten, diemhs1, diemhs2, diemhs3 = line.split(',')
     diemhs1 = int(diemhs1)
     diemhs2 = int(diemhs2)
@@ -11,10 +11,10 @@ for line in f:
 
 f.close()
 
-f = open('diem_trungbinh_output.csv', 'wt')
+fo = open('diem_trungbinh_output.csv', 'wt')
 for hocsinh in ds_lop:
     hoten, diemhs1, diemhs2, diemhs3, diem_tb = hocsinh    
     line = '{}, {}, {}, {}, {: 1.1f}'.format(hoten, diemhs1, diemhs2, diemhs3, diem_tb)
-    f.write(line + '\n')
+    fo.write(line + '\n')
 
-f.close()
+fo.close()
