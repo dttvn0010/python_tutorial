@@ -1,15 +1,12 @@
 import math
 
-S = input('S = ')
-S = float(S)
-
-P = input('P = ')
-P = float(P)
+S = float(input('S = '))
+P = float(input('P = '))
 
 delta = S*S - 4*P
 
 if delta < 0:
-    print('Khong ton tai 2 so thoa man yeu cau')
+    print('Không tồn tại 2 số thỏa mãn yêu cầu')
     exit()
 
 sqrt_delta = math.sqrt(delta)
