@@ -1,5 +1,3 @@
-days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-
 date = input('Ngày : ')
 date = int(date)
 
@@ -17,11 +15,12 @@ if month > 12:
     print('Không tồn tại ngày này')
     exit()
 
-day_in_month = days_in_month[month-1]
-
-if month == 2 and year%4 == 0:
-    day_in_month += 1
-
+if month == 2:
+    day_in_month = 29 if (year%4 == 0) else 28
+else:
+    x = month if (month < 8) else month-7
+    day_in_month = 30 + x % 2
+     
 if date <= day_in_month:
     print('Tồn tại ngày này')
 else:
