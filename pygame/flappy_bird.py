@@ -50,7 +50,7 @@ while True:
 
     if not finished:
         screen.fill(WHITE)
-        screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))    
+        screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
 
         for pipe in pipes:
             pygame.draw.rect(screen, GREEN, pipe)
@@ -69,7 +69,7 @@ while True:
             vy = 0.0
 
         for pipe in pipes:
-            pipe.left -= 1                    
+            pipe.left -= 1
 
         frameNo += 1
         if frameNo % 150 == 0:
