@@ -1,11 +1,6 @@
-date = input('Ngày : ')
-date = int(date)
-
-month = input('Tháng : ')
-month = int(month)
-
-year = input('Năm : ')
-year = int(year)
+date = int(input('Ngày : '))
+month = int(input('Tháng : '))
+year = int(input('Năm : '))
 
 if date <= 0 or month <= 0 or year <= 0:
     print('Không tồn tại ngày này')
