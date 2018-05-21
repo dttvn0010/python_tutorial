@@ -20,6 +20,12 @@ while True:
         if event.type == pygame.QUIT: 
             sys.exit()
 
+        if event.type == pygame.KEYDOWN and event.key == pygame.K_UP: 
+            a = -0.1
+
+        if event.type == pygame.KEYUP: 
+            a = 0.05
+
     screen.fill(WHITE)
     pygame.draw.ellipse(screen, RED, pygame.Rect(x, y, sz, sz))
     pygame.display.flip()
@@ -30,3 +36,7 @@ while True:
     if y + sz > screenY:        
         y = screenY - sz
         vy = -0.9 * vy
+
+    if y < 0:
+        y = 0
+        vy = 0

@@ -12,6 +12,9 @@ y = 0
 vy = 0
 a = 0.05
 
+image = pygame.image.load("ball.png")
+image = pygame.transform.scale(image, (sz, sz))
+
 clock = pygame.time.Clock()
 while True:
     clock.tick(100)
@@ -27,13 +30,13 @@ while True:
             a = 0.05
 
     screen.fill(WHITE)
-    pygame.draw.ellipse(screen, RED, pygame.Rect(x, y, sz, sz))
+    screen.blit(image, pygame.Rect(x, y, sz, sz))
     pygame.display.flip()
 
     vy += a
     y += vy
     
-    if y + sz > screenY:        
+    if y + sz > screenY:
         y = screenY - sz
         vy = -0.9 * vy
 

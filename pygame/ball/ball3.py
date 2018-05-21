@@ -27,6 +27,6 @@ while True:
     vy += a
     y += vy
     
-    if y + sz > screenY:
+    if y + sz > screenY:        
         y = screenY - sz
-        vy = -vy
+        vy = -0.9 * vy
