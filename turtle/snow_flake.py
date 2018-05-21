@@ -1,7 +1,6 @@
 # http://python-with-science.readthedocs.io/en/latest/koch_fractal/koch_fractal.html#the-basic-unit
-
-
 # Draw a Koch snowflake
+
 from turtle import *
 
 def koch(a, order):
@@ -12,32 +11,20 @@ def koch(a, order):
     else:
         forward(a)
 
-# Choose colours and size
-color("sky blue", "white")
-bgcolor("black")
-size = 400
-order = 7
+color("sky blue")
+size = 300
+order = 5
 
-# Ensure snowflake is centred
 penup()
 backward(size/1.732)
 left(30)
 pendown()
 
-# Make it fast
 tracer(100)
-#hideturtle()
+hideturtle()
 
-begin_fill()
-
-# Three Koch curves
 for i in range(3):
     koch(size, order)
     right(120)
-
-end_fill()
-
-# Make the last parts appear
-update()
 
 done()
