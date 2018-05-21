@@ -14,7 +14,9 @@ fi.close()
 fo = open('diem_trungbinh_output.csv', 'wt')
 for hocsinh in ds_lop:
     hoten, diemhs1, diemhs2, diemhs3, diem_tb = hocsinh    
-    line = '{}, {}, {}, {}, {: 1.1f}'.format(hoten, diemhs1, diemhs2, diemhs3, diem_tb)
+    line = '{}, {}, {}, {}, {: 1.1f}'.format(
+    		hoten, diemhs1, diemhs2, diemhs3, diem_tb)
+    
     fo.write(line + '\n')
 
 fo.close()
