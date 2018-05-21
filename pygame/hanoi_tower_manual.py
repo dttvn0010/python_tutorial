@@ -74,7 +74,7 @@ while True:
                 
                 if top_disk_rect.collidepoint(mouse_pos):
                     move_disk = top_disk
-                    move_rect = getRect(move_disk)
+                    move_rect = top_disk_rect
                     break                    
 
         if event.type == pygame.MOUSEMOTION and move_disk != None:
