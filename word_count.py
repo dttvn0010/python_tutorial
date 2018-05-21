@@ -1,10 +1,11 @@
-text = 'một năm có mười hai tháng , tháng hai có hai mươi tám ngày , các tháng còn lại có ba mươi hoặc ba mươi mốt ngày'
+text = 'Một năm có mười hai tháng, tháng hai có hai mươi tám ngày, các tháng còn lại có ba mươi hoặc ba mươi mốt ngày.'
 
 text = text.lower()
 for c in ['.', ',' , ':']:
     text = text.replace(c, ' ')
 
-word_counts = {}
+words_count = {}
+
 for word in text.split():
     words_count[word] = words_count.get(word, 0) + 1
 
