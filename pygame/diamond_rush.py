@@ -18,22 +18,21 @@ rod_max = 500
 
 angle = 0
 score = 0
+
 diamonds = [(80, 400), (240, 400), (400,400), (560, 400), (160,320), (320,320), (480, 320), (240, 240), (400,240), (320, 160)]
 
 def draw_rod(x, y, phi, caught):
     pygame.draw.line(screen, ORANGE, (screenX/2, 0), (x, y), 3)
     
-    dx = img_size/2 * math.cos(phi)
-    dy = img_size/2 * math.sin(phi)
+    cx = x + img_size/2 * math.cos(phi)
+    cy = y + img_size/2 * math.sin(phi)
+
+    rect = pygame.Rect(cx - img_size/2, cy - img_size/2, img_size, img_size)
 
     if caught:
-        screen.blit(image, pygame.Rect(x + dx - img_size/2, y + dy - img_size/2, img_size, img_size))
+        screen.blit(image, rect)
 
-    point1 = (x - dy, y + dx)
-    point2 = (x - dy + 2*dx, y + dx + 2*dy)
-    point3 = (x + dy, y - dx)
-    point4 = (x + dy + 2*dx, y - dx + 2*dy)
-    pygame.draw.lines(screen, ORANGE, False, (point4, point3, point1, point2), 3)
+    pygame.draw.arc(screen, ORANGE, rect, math.pi/2 - phi, 3*math.pi/2 - phi, 3)
 
 clock = pygame.time.Clock()
 state = 'searching'
@@ -49,7 +48,7 @@ while True:
             if state == 'searching':
                 state = 'reaching'
 
-    phi = abs(angle%360 - 180)/180. * math.pi
+    phi = abs(angle%360 - 180) * math.pi/180
     x = screenX/2 + rod * math.cos(phi)
     y = rod * math.sin(phi)
     
@@ -86,5 +85,5 @@ while True:
 
     score_text = font.render("Score : " + str(score), False, ORANGE)
     screen.blit(score_text, (500, 30))
-    
+
     pygame.display.flip()
