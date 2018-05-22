@@ -14,13 +14,13 @@ def convert2digit(words):
 
     chuc, donvi = -1, -1
 
-    if N == 2 and words[0] == 'mười':
-        chuc = 1
-        donvi = bang_so2.get(words[1], -1)
-
     if (N == 3 and words[1] == 'mươi') or N == 2:
         chuc = bang_so1.get(words[0], -1)
         donvi = bang_so3.get(words[-1], -1)
+
+    if N == 2 and words[0] == 'mười':
+        chuc = 1
+        donvi = bang_so2.get(words[1], -1)
 
     if chuc >= 0 and donvi >= 0:
         return 10 * chuc + donvi
@@ -55,6 +55,6 @@ def convert3digit(words):
 def text2num(text):    
     return convert3digit(text.lower().split())
 
-print(text2num('tám trăm hai mươi bốn'))
+print(text2num('hai hai'))
 
 
