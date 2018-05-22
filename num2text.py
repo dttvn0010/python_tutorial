@@ -1,6 +1,6 @@
 bangso = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
 
-def convert2digit(x):
+def convert2digits(x):
     if x < 10:
         return bangso[x]
 
@@ -23,9 +23,9 @@ def convert2digit(x):
 
     return text
 
-def convert3digit(x):
+def convert3digits(x):
     if x < 100:
-        return convert2digit(x)
+        return convert2digits(x)
 
     tram = x // 100
     chuc = (x//10) % 10
@@ -34,11 +34,11 @@ def convert3digit(x):
     text = bangso[tram] + ' trăm'
 
     if chuc > 0:
-        text += ' ' + convert2digit(x%100)
+        text += ' ' + convert2digits(x%100)
 
     elif donvi > 0:
         text += ' lẻ ' + bangso[donvi]
 
     return text
 
-print(convert3digit(105))
+print(convert3digits(105))
