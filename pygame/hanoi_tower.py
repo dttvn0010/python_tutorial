@@ -62,8 +62,7 @@ def hanoi(src, dest, ndisks):
         hanoi(3-src-dest, dest, ndisks-1)
 
 for i in range(ndisks):
-    disk_width = column_width * (ndisks - i) / ndisks
-    disk = {'width' : disk_width}
+    disk = {'width' : column_width * (ndisks - i) / ndisks}
     pushDisk(disk, 0)
     pygame.draw.rect(screen, GREEN, getRect(disk))
 

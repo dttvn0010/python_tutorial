@@ -35,8 +35,7 @@ def popDisk(column):
     disks[column].pop()
 
 for i in range(ndisks):
-    disk_width = column_width * (ndisks - i) / ndisks
-    disk = {'width' : disk_width}
+    disk = {'width' : column_width * (ndisks - i) / ndisks}
     pushDisk(disk, 0)
 
 move_disk = None
