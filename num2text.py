@@ -1,13 +1,13 @@
-chuso = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
+bangso = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
 
 def convert2digit(x):
     if x < 10:
-        return chuso[x]
+        return bangso[x]
 
     chuc = x // 10
     donvi = x % 10
     
-    text = (chuso[chuc] + ' mươi') if chuc > 1 else 'mười'    
+    text = (bangso[chuc] + ' mươi') if chuc > 1 else 'mười'    
 
     if donvi > 0:
         text += ' '
@@ -19,7 +19,7 @@ def convert2digit(x):
             text += 'mốt'
 
         else:
-            text += chuso[donvi]
+            text += bangso[donvi]
 
     return text
 
@@ -31,13 +31,13 @@ def convert3digit(x):
     chuc = (x//10) % 10
     donvi = x % 10
  
-    text = chuso[tram] + ' trăm'
+    text = bangso[tram] + ' trăm'
 
     if chuc > 0:
         text += ' ' + convert2digit(x%100)
 
     elif donvi > 0:
-        text += ' lẻ ' + chuso[donvi]
+        text += ' lẻ ' + bangso[donvi]
 
     return text
 
