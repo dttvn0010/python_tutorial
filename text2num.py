@@ -45,8 +45,7 @@ def convert3digits(words):
     if tram >= 0 and x >= 0:
         return 100*tram + x
 
-    return -1
-        
+    return -1        
 
 def text2num(text):    
     return convert3digits(text.lower().split())
