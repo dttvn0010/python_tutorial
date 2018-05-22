@@ -35,7 +35,6 @@ def draw_rod(x, y, phi, caught):
     point4 = (x + dy + 2*dx, y - dx + 2*dy)
     pygame.draw.lines(screen, ORANGE, False, (point4, point3, point1, point2), 3)
 
-
 clock = pygame.time.Clock()
 state = 'searching'
 
@@ -47,7 +46,8 @@ while True:
             sys.exit()
 
         if event.type == pygame.KEYDOWN and event.key == pygame.K_DOWN:
-            state = 'reaching'
+            if state == 'searching':
+                state = 'reaching'
 
     phi = abs(angle%360 - 180)/180. * math.pi
     x = screenX/2 + rod * math.cos(phi)
@@ -86,5 +86,5 @@ while True:
 
     score_text = font.render("Score : " + str(score), False, ORANGE)
     screen.blit(score_text, (500, 30))
-
+    
     pygame.display.flip()
