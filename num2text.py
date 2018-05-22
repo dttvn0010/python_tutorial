@@ -42,6 +42,3 @@ def convert3digit(x):
     return text
 
 print(convert3digit(105))
-    
-
-    

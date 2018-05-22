@@ -2,15 +2,11 @@ bang_so1 = {'một' : 1, 'hai' : 2, 'ba' : 3, 'bốn' : 4, 'năm' : 5, 'sáu' : 
 bang_so2 = {'một' : 1, 'hai' : 2, 'ba' : 3, 'bốn' : 4, 'lăm' : 5, 'sáu' : 6, 'bảy' : 7, 'tám' : 8, 'chín' : 9}
 bang_so3 = {'mươi' : 0, 'mốt' : 1, 'hai' : 2, 'ba' : 3, 'bốn' : 4, 'tư' : 4, 'lăm' : 5, 'sáu' : 6, 'bảy' : 7, 'tám' : 8, 'chín' : 9}
 
-
-def convert1digit(words):
-    return bang_so1.get(words[0], -1)
-
-def convert2digit(words):
+def convert2digits(words):
     N = len(words)
 
     if N == 1:
-        return convert1digit(words)
+        return bang_so1.get(words[0], -1)
 
     chuc, donvi = -1, -1
 
@@ -27,11 +23,11 @@ def convert2digit(words):
     
     return -1
 
-def convert3digit(words):
+def convert3digits(words):
     N = len(words)
 
     if N <= 1 or words[1] != 'trăm':
-        return convert2digit(words)
+        return convert2digits(words)
 
     tram = bang_so1.get(words[0], -1)
 
@@ -44,7 +40,7 @@ def convert3digit(words):
         if tram >= 0 and donvi >= 0:
             return 100*tram + donvi
 
-    x = convert2digit(words[2:])
+    x = convert2digits(words[2:])
 
     if tram >= 0 and x >= 0:
         return 100*tram + x
@@ -53,8 +49,6 @@ def convert3digit(words):
         
 
 def text2num(text):    
-    return convert3digit(text.lower().split())
+    return convert3digits(text.lower().split())
 
-print(text2num('hai hai'))
-
-
+print(text2num('tám trăm năm mươi tư'))
