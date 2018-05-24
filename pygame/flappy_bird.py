@@ -47,13 +47,13 @@ while True:
     screen.fill((255, 255, 255))
     screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
     
-    bird_rect = pygame.Rect(x+2, y+2, bird_size-4, bird_size-4)    
+    bird = pygame.Rect(x+2, y+2, bird_size-4, bird_size-4)    
 
     for pipe in pipes:
         pipe.left -= 1
         pygame.draw.rect(screen, (0, 255, 0), pipe)            
 
-        if bird_rect.colliderect(pipe):
+        if bird.colliderect(pipe):
             finished = True
 
     pipes = [pipe for pipe in pipes if pipe.left >= 0]
