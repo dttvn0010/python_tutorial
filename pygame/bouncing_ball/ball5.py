@@ -16,6 +16,7 @@ image = pygame.image.load("ball.png")
 image = pygame.transform.scale(image, (ball_size, ball_size))
 
 clock = pygame.time.Clock()
+
 while True:
     clock.tick(100)
 

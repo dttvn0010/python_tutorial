@@ -12,6 +12,7 @@ y = 0
 vy = 1
 
 clock = pygame.time.Clock()
+
 while True:
     clock.tick(100)
 
