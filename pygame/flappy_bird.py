@@ -1,4 +1,4 @@
-import sys, pygame, time, random
+import sys, pygame, random
 
 screenSize = screenX, screenY = 640, 480
 screen = pygame.display.set_mode(screenSize)
@@ -26,10 +26,10 @@ while True:
         if event.type == pygame.QUIT: 
             sys.exit()
 
-        if event.type == pygame.KEYDOWN and event.key == pygame.K_UP: 
+        if event.type == pygame.MOUSEBUTTONDOWN: 
             a = -0.2            
 
-        if event.type == pygame.KEYUP: 
+        if event.type == pygame.MOUSEBUTTONUP: 
             a = 0.05
 
     if finished:
