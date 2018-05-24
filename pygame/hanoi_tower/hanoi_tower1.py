@@ -36,4 +36,3 @@ for i in range(ndisks):
 
 pygame.display.flip()
 time.sleep(3)
-
