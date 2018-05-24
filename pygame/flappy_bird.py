@@ -67,8 +67,8 @@ while True:
         frameNo += 1
         if frameNo % 150 == 0:
             h1 = random.randint(25, 250)
-            h2 = random.randint(75, 250)
+            h2 = h1 + random.randint(75, 250)
             pipes.append(pygame.Rect(screenX, 0, 10, h1))
-            pipes.append(pygame.Rect(screenX, h1+h2, 10, screenY-(h1+h2)))
+            pipes.append(pygame.Rect(screenX, h2, 10, screenY-h2))
 
         pygame.display.flip()
