@@ -35,11 +35,7 @@ while True:
             a = 0.05
     
     if not finished:
-        screen.fill((255, 255, 255))
-        screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
-
-        for pipe in pipes:
-            pygame.draw.rect(screen, (0, 255, 0), pipe)
+        screen.fill((255, 255, 255))        
 
         vy += a
         y += vy
@@ -52,12 +48,15 @@ while True:
             y = 0
             vy = 0.0
 
-        check_rect = pygame.Rect(x+2, y+2, bird_size-4, bird_size-4)
+        screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
+
+        bird_rect = pygame.Rect(x+2, y+2, bird_size-4, bird_size-4)
 
         for pipe in pipes:
             pipe.left -= 1
+            pygame.draw.rect(screen, (0, 255, 0), pipe)            
 
-            if check_rect.colliderect(pipe):
+            if bird_rect.colliderect(pipe):
                 text = font.render('Game Over!', False, (255, 0, 0))
                 screen.blit(text, (280, 220))
                 finished = True
@@ -67,9 +66,9 @@ while True:
 
         frameNo += 1
         if frameNo % 150 == 0:
-            height = random.randint(25, 250)
-            lowerTop = height + random.randint(75, 250)
-            pipes.append(pygame.Rect(screenX, 0, 10, height))
-            pipes.append(pygame.Rect(screenX, lowerTop, 10, screenY-lowerTop))
+            h1 = random.randint(25, 250)
+            h2 = random.randint(75, 250)
+            pipes.append(pygame.Rect(screenX, 0, 10, h1))
+            pipes.append(pygame.Rect(screenX, h1+h2, 10, screenY-(h1+h2)))
 
         pygame.display.flip()
