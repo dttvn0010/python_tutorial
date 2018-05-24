@@ -17,6 +17,7 @@ image = pygame.transform.scale(image, (bird_size, bird_size))
 pipes = []
 frameNo = 0
 clock = pygame.time.Clock()
+finished = False
 
 while True:
     clock.tick(50)
@@ -29,7 +30,10 @@ while True:
             a = -0.2            
 
         if event.type == pygame.KEYUP: 
-            a = 0.05        
+            a = 0.05
+
+    if finished:
+        continue
 
     vy += a
     y += vy
@@ -43,16 +47,14 @@ while True:
     screen.fill((255, 255, 255))
     screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
     
-    bird_rect = pygame.Rect(x+2, y+2, bird_size-4, bird_size-4)
-
-    game_over = False
+    bird_rect = pygame.Rect(x+2, y+2, bird_size-4, bird_size-4)    
 
     for pipe in pipes:
         pipe.left -= 1
         pygame.draw.rect(screen, (0, 255, 0), pipe)            
 
         if bird_rect.colliderect(pipe):
-            game_over = True
+            finished = True
 
     pipes = [pipe for pipe in pipes if pipe.left >= 0]
 
@@ -63,11 +65,8 @@ while True:
         pipes.append(pygame.Rect(screenX, 0, 10, h1))
         pipes.append(pygame.Rect(screenX, h2, 10, screenY-h2))
 
-    pygame.display.flip()
-
-    if game_over:
+    if finished:
         text = font.render('Game Over!', False, (255, 0, 0))
         screen.blit(text, (280, 220))
-        pygame.display.flip()
-        time.sleep(1)
-        sys.exit()
+
+    pygame.display.flip()
