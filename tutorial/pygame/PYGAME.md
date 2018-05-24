@@ -1,3 +1,3 @@
 # Lập trình game với Pygame
 
-[Về đầu trang](../../README.md)
+[Về đầu trang](../../)
