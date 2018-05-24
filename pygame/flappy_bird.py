@@ -1,17 +1,13 @@
 import sys, pygame, random
 
-WHITE = 255, 255, 255
-RED = 255, 0, 0
-GREEN = 0, 255, 0
-
-bird_size = 40
-x = 300
-y = 200
-a = 0.05
-vy = 0
-
 screenSize = screenX, screenY = 640, 480
 screen = pygame.display.set_mode(screenSize)
+
+bird_size = 40
+x = (screenX - bird_size)/2
+y = (screenY - bird_size)/2
+a = 0.05
+vy = 0
 
 pygame.font.init()
 font = pygame.font.SysFont('Calibri', 40)
@@ -42,18 +38,18 @@ while True:
 
     for pipe in pipes:
         if check_rect.colliderect(pipe):
-            text = font.render('Game Over!', False, RED)
+            text = font.render('Game Over!', False, (255, 0, 0))
             screen.blit(text, (280, 220))
             pygame.display.flip()
             finished = True
             break
 
     if not finished:
-        screen.fill(WHITE)
+        screen.fill((255, 255, 255))
         screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
 
         for pipe in pipes:
-            pygame.draw.rect(screen, GREEN, pipe)
+            pygame.draw.rect(screen, (0, 255, 0), pipe)
 
         pygame.display.flip()
 
