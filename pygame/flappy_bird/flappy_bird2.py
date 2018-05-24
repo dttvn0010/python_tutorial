@@ -35,7 +35,6 @@ while True:
     if y < 0:
         vy, y = 0, 0
 
-
     screen.fill((255, 255, 255))
     screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
     pygame.display.flip()
