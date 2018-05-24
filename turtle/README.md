@@ -1,1 +1,0 @@
-# Học vẽ với Turtle

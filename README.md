@@ -1,7 +1,7 @@
-# python_tutorial
+# Học lập trình Python
 
-[Python cơ bản](BASIC_PYTHON.md)
+[Python cơ bản](tutorial/basic/BASIC_PYTHON.md)
 
-[Học vẽ với Turtle](turtle/README.md)
+[Học vẽ với Turtle](tutorial/turtle/TURTLE.md)
 
-[Lập trình game với Pygame](pygame/README.md)
+[Lập trình game với Pygame](tutorial/pygame/PYGAME.md)
