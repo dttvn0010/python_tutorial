@@ -15,12 +15,6 @@ disks = [[], [], []]
 screen = pygame.display.set_mode((screenX, screenY))
 screen.fill(WHITE)
 
-def getRect(disk):
-    xcenter = (disk['column'] + 0.5) * column_width
-    left = xcenter - disk['width']/2
-    top = screenY - disk_height * disk['level']
-    return pygame.Rect(left, top, disk['width'], disk_height-1)
-
 def pushDisk(disk, column):
     disk['column'] = column
     disk['level'] = len(disks[column]) + 1
@@ -28,6 +22,12 @@ def pushDisk(disk, column):
 
 def popDisk(column):
     disks[column].pop()
+
+def getRect(disk):
+    xcenter = (disk['column'] + 0.5) * column_width
+    left = xcenter - disk['width']/2
+    top = screenY - disk_height * disk['level']
+    return pygame.Rect(left, top, disk['width'], disk_height-1)
 
 def animateMove(old_rect, new_rect):
     pygame.draw.rect(screen, WHITE, old_rect)
@@ -62,10 +62,6 @@ for i in range(ndisks):
 
 pygame.display.flip()
 
-def hanoi(src, dest, ndisks):
-    if ndisks > 0:
-        hanoi(src, 3-src-dest, ndisks-1)
-        moveDisk(disks[src][-1], dest)
-        hanoi(3-src-dest, dest, ndisks-1)
-
-hanoi(0, 2, ndisks)
+time.sleep(1)
+moveDisk(disks[0][-1], 2)
+time.sleep(3)
