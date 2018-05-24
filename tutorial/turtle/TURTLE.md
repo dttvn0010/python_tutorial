@@ -1,3 +1,3 @@
 # Học vẽ với Turtle
 
-[Về đầu trang](../../)
+[Về đầu trang](../../../../)
