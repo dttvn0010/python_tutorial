@@ -6,8 +6,7 @@ screen = pygame.display.set_mode(screenSize)
 bird_size = 40
 x = (screenX - bird_size)/2
 y = (screenY - bird_size)/2
-a = 0.05
-vy = 0
+vy, a = 0, 0.05
 
 pygame.font.init()
 font = pygame.font.SysFont('Calibri', 40)
@@ -41,12 +40,10 @@ while True:
         y += vy
 
         if y + bird_size > screenY:
-            y = screenY - bird_size
-            vy = 0.0
+            vy, y = 0, screenY - bird_size
 
         if y < 0:
-            y = 0
-            vy = 0.0
+            vy, y = 0, 0
 
         screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
 
