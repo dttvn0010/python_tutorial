@@ -1,3 +1,7 @@
+"""
+Chương trình chuyển một số từ hệ thập phân sang nhị phân
+"""
+
 x = 2000
 s = ''
 

@@ -1,3 +1,12 @@
+"""
+Chương trình tìm 2 số khi biết tổng và tỉ số
+ - Đầu vào :
+   + S : tổng của 2 số
+   + R : thương của 2 số
+ - Đầu ra:
+   + Giá trị 2 số
+"""
+
 S = input('S = ')
 S = float(S)
 

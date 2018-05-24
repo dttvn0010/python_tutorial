@@ -1,3 +1,9 @@
+"""
+Chương trình kiểm tra tính hợp lệ của một ngày
+ - Đầu vào : Ngày , tháng, năm
+ - Đầu ra : Có tồn tại ngày đó không
+"""
+
 date = int(input('Ngày : '))
 month = int(input('Tháng : '))
 year = int(input('Năm : '))

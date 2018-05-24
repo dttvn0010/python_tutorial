@@ -1,3 +1,7 @@
+"""
+Chương trình vẽ ngôi sao 5 cánh
+"""
+
 from turtle import *
 
 for i in range(5):

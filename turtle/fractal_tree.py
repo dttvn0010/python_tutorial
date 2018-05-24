@@ -1,3 +1,7 @@
+"""
+Chương trình vẽ cây sử dụng hình học fractal
+"""
+
 #https://trinket.io/python/62ca928524
 
 from turtle import *

@@ -1,3 +1,7 @@
+"""
+Chương trình kiểm tra một số tự nhiên có phải là số nguyên tố không
+"""
+
 x = 8477216359
 
 i = 2

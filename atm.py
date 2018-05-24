@@ -1,3 +1,10 @@
+"""
+Chương trình tính số tờ tiền trả lại của máy ATM
+ - Đầu vào : Số tiền máy ATM cần trả lại (bội số của 5k)
+ - Đầu ra: Số tờ của từng loại tiền 50k, 20k, 5k 
+   sao cho tổng số tờ trả lại ít nhất
+"""
+
 tientralai = input('Số tiền cần trả lại (nghìn đồng) :')
 tientralai = int(tientralai)
 

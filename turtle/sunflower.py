@@ -1,3 +1,7 @@
+"""
+Chương trình vẽ bông hoa hướng dương
+"""
+
 # Sunflower with a phyllotactic pattern
 # By Deborah R. Fowler
 # Modified from 

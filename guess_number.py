@@ -1,3 +1,10 @@
+"""
+Chương trình đoán số tự nhiên.
+Bạn hãy nghĩ trong đầu một số từ 0 đến 1000
+Máy tính sẽ hỏi 10 câu, mỗi câu bạn chỉ trả lời Y/N xem câu đó đúng hay sai. 
+Sau 10 câu hỏi, máy tính sẽ đưa ra số bạn đang nghĩ là gì.
+"""
+
 low = 0
 high = 1000
 

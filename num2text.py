@@ -1,3 +1,9 @@
+"""
+Chương trình chuyển một số có 3 chữ số thành phát âm tiếng Việt
+ - Đầu vào : số tự nhiên trong phạm vi từ 0 đến 999
+ - Đầu ra : phát âm tiếng Việt của số đó
+"""
+
 bangso = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín']
 
 def convert2digits(x):

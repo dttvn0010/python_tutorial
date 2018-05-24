@@ -1,3 +1,13 @@
+"""
+Chương trình tính khoảng cách giữa 2 điểm trên mặt đất theo tọa độ GPS
+ - Đầu vào :
+   + (kd1, vd1) : kinh độ, vĩ độ điểm thứ 1
+   + (kd2, vd2) : kinh độ, vĩ độ điểm thứ 2
+   + Bán kính trái đất = 6371 km
+ - Đầu ra:
+   + Khoảng cách (theo km) giữa 2 điểm
+"""
+
 import math
 
 R = 6371
@@ -16,5 +26,5 @@ dy = R * math.pi * abs(vd2-vd1)/180
 
 d = math.sqrt(dx*dx + dy*dy)
 
-print('Distance = ', round(d, 6))
+print('Khoảng cách giữa 2 điểm : ', round(d, 6))
 

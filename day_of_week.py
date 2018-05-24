@@ -1,3 +1,9 @@
+"""
+Chương trình xác định thứ trong tuần của một ngày
+ - Đầu vào : Ngày, tháng, năm (trong thế kỉ 21)
+ - Đầu ra : Xác định ngày đó là thứ mấy
+"""
+
 day_of_week = ['thứ hai', 'thứ ba', 'thứ tư', 'thứ năm', 'thứ sáu', 'thứ bảy', 'chủ nhật']
 days_in_month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 

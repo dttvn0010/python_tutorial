@@ -1,3 +1,13 @@
+"""
+Chương trình vẽ chuyển động của tên lửa đuổi theo máy bay
+ + Tên lửa trên mặt đất ở tọa độ (0,0)
+ + Máy bay ở tọa độ (100, 100) và chuyển động theo phương ngang
+ + Tên lửa đuổi theo máy bay, vận tốc tên lửa gấp 2 vận tốc máy bay 
+ + Tên lửa luôn hướng về phía máy bay trong quá trình chuyển động
+
+Vẽ quỹ đạo chuyển động của máy bay và tên lửa
+"""
+
 import turtle
 
 def createTurtle(x,y):

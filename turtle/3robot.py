@@ -1,3 +1,14 @@
+"""
+Chương trình vẽ chuyển động 3 robot.
+ + 3 robot xuất phát tại 3 đỉnh một tam giác đều 
+ + Robot 1 chuyển động hướng về Robot 2
+ + Robot 2 chuyển động hướng về Robot 3
+ + Robot 3 chuyển động hướng về Robot 1
+ + 3 robot chuyển động với cùng vận tốc
+
+Vẽ quỹ đạo chuyển động các robot
+"""
+
 import turtle
 
 def createTurtle(x,y):

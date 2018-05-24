@@ -1,3 +1,11 @@
+"""
+Chương trình kiểm tra tính hợp lệ của mật khẩu.
+Mật khẩu hợp lệ cần thỏa mãn các điều kiện:
+  + Có ít nhất 6 kí tự
+  + Chứa ít nhất một chữ cái a-z hoặc A-Z
+  + Chứa ít nhất một chữ số
+"""
+
 password = input('Nhập mật khẩu : ')
 
 if len(password) < 6:

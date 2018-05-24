@@ -1,3 +1,7 @@
+"""
+Chương trình vẽ hình vuông
+"""
+
 from turtle import *
 
 fillcolor("yellow")

@@ -1,3 +1,14 @@
+"""
+Chương trình tính điểm trung bình của một lớp học
+ - Đầu vào : File csv, mỗi hàng chứa thông tin điểm của một học sinh
+   Mỗi hàng có các cột sau, ngăn cách bởi dầu phảy :
+     + Họ tên
+     + Điểm hệ số 1
+     + Điểm hệ số 2
+     + Điểm hệ số 3
+  - Đầu ra: File csv, mỗi hàng giống như file csv đầu vào, nhưng có thêm cột điểm trung bình ở cuối
+"""
+
 ds_lop = []
 
 fi = open('diem_trungbinh_input.csv')

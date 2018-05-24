@@ -1,3 +1,7 @@
+"""
+Chương trình đếm số lần xuất hiện các từ trong một câu
+"""
+
 text = 'Một năm có mười hai tháng, tháng hai có hai mươi tám ngày, các tháng còn lại có ba mươi hoặc ba mươi mốt ngày.'
 
 text = text.lower()

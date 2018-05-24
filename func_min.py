@@ -1,3 +1,12 @@
+"""
+Chương trình tìm giá trị nhỏ nhất một hàm số trên một đoạn
+ - Đầu vào :
+   + f(x) : hàm số cần tìm giá trị nhỏ nhất
+   + [a, b] : đoạn cần tìm giá trị nhỏ nhất
+ - Đầu ra :
+   + Giá trị nhỏ nhất và điểm đạt giá trị nhỏ nhất của hàm số
+"""
+
 def f(x):
     return 2*x*x - x + 1
 

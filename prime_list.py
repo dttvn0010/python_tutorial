@@ -1,3 +1,7 @@
+"""
+Chương trình in ra các số nguyên tố nhỏ hơn 1000
+"""
+
 ds = []
 
 for x in range(2, 1000):

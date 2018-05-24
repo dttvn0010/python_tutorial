@@ -1,3 +1,7 @@
+"""
+Chương trình vẽ hình chữ nhật
+"""
+
 from turtle import *
 
 forward(100)

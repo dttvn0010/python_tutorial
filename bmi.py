@@ -1,3 +1,13 @@
+"""
+Chương trình tính chỉ số BMI và kiểm tra thân hình
+ - Đầu vào : 
+    + Chiều cao (mét)
+    + Cân nặng (kg)
+ - Đầu ra : 
+     + Chỉ số BMI = Cân nặng chia bình phương chiều cao
+     + Tình trạng thân hình : Gầy/Béo/Bình thường 
+"""
+
 height = input('Chiều cao (mét) : ')
 height = float(height)
 

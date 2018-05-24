@@ -1,3 +1,12 @@
+"""
+Chương trình tìm 2 số khi biết tổng và tích
+ - Đầu vào :
+   + S : tổng của 2 số
+   + P : tích của 2 số
+ - Đầu ra:
+   + Giá trị 2 số nếu tồn tại, nếu không thông báo không tồn tại 2 số
+"""
+
 import math
 
 S = float(input('S = '))

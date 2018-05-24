@@ -1,3 +1,7 @@
+"""
+Chương trình in ra 10 dòng đầu của tam giác Pascal
+"""
+
 N = 10
 heso = []
 

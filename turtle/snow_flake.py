@@ -1,3 +1,8 @@
+"""
+Chương trình vẽ bông tuyết sử dụng hình học fractal
+"""
+
+
 # http://python-with-science.readthedocs.io/en/latest/koch_fractal/koch_fractal.html#the-basic-unit
 # Draw a Koch snowflake
 

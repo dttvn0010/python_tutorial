@@ -1,3 +1,7 @@
+"""
+Chương trình vẽ đa giác đều
+"""
+
 from turtle import *
 
 num_sides = 8

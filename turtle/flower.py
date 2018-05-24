@@ -1,3 +1,7 @@
+"""
+Chương trình vẽ bông hoa
+"""
+
 # http://nghiaho.com/?p=1603
 # Thanks goes to Raphael for improving the original slow clunky code
 
