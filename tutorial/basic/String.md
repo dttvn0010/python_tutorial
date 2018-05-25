@@ -39,7 +39,7 @@ text[start:end]
 ```
 Trong đó ```start```, ```end``` là vị trí bắt đầu và kết thúc của xâu con chúng ta muốn lấy ra. Lưu ý :
  - Kí tự đầu tiên trong xâu có vị trí là 0
- - Kí tự ở vị trị ```end``` không bao gồm trong xâu con lấy ra, tức xâu con gồm các kí tự từ 0 đến ```end-1```
+ - Kí tự ở vị trị ```end``` không bao gồm trong xâu con lấy ra, tức xâu con gồm các kí tự từ vị trí 0 đến ```end-1```
 
 Ví dụ:
 ```python
@@ -94,14 +94,14 @@ Mã hóa một bức điện
 
 An và Bình trao đổi qua email. Để tránh việc bị lộ nội dung trao đổi ra ngoài, An dùng chương trình để mã hóa nội dung gửi đi. Giả sử nội dung bức điện chỉ chứa các chữ cái hoa trong bảng chữ cái tiếng Anh (từ 'A' đến 'Z') và kí tự trắng (phân cách các từ). Chương trình mã hóa được thực hiện như sau:
  - An chọn một số tự nhiên ```k``` trong khoảng từ 1 đến 25, dùng làm khóa hay mật mã
- - Với mỗi kí tự trong xâu nội dung, nếu kí tự đó là kí tự trắng (phân cách các từ) thì giữ nguyên, nếu là kí tự chữ cái thì dịch đi ```k``` vị trí trong bảng chữ cái tiếng Anh, nếu kí tự vượt qua 'Z' thì quay trở về 'A' trong bảng chữ cái.
+ - Với mỗi kí tự trong xâu nội dung, nếu kí tự đó là kí tự trắng (phân cách các từ) thì giữ nguyên, nếu là kí tự là chữ cái thì dịch đi ```k``` vị trí trong bảng chữ cái tiếng Anh, khi dịch qua 'Z' thì quay về 'A' trong bảng chữ cái.
 
 Bạn hãy giúp An viết chương trình mã hóa trên. Để đơn giản, An chọn trước khóa ```k = 10```.
 
 Lời giải:
 
 Để thực hiện chương trình trên, chúng ta cần biết một số hàm:
- - Hàm ```ord(c)``` : lấy mã thứ tự của một kí tự trong bảng mã kí tự. Ví dụ ```ord('A') -> 65, ord('Z')->90```
+ - Hàm ```ord(c)``` : lấy mã thứ tự của một kí tự trong bảng mã kí tự. Ví dụ ```ord('A') -> 65, ord('Z') -> 90```
  - Hàm ```chr(x)``` : chuyển ngược từ thứ tự của một kí tự trong bảng kí tự thành kí tự đó. Ví dụ ```chr(65) -> 'A'```
 
 Với 2 hàm trên, việc dịch một kí ```c``` tự đi ```k``` vị trí trong bảng chữ cái được thực hiện như sau:
@@ -114,7 +114,7 @@ x = x + ord('A')
 c = chr(x)
 ```
 
-Ở đoạn chương trình trên, dòng đầu tiên tính vị trị của kí tự ```c``` trong bảng chữ cái tiếng Anh, dòng thứ 2 dịch đi k vị trị, dòng thứ 3 đảm bảo nếu vị trí dịch qua 'Z' sẽ quay về đầu bảng chữ cái tại 'A', dòng thứ 4 chuyển vị trị được dịch tới về kí tứ tương ứng.
+Ở đoạn chương trình trên, dòng đầu tiên tính vị trị của kí tự ```c``` trong bảng chữ cái tiếng Anh, dòng thứ 2 dịch đi k vị trị, dòng thứ 3 đảm bảo nếu vị trí dịch qua 'Z' sẽ quay về 'A', dòng thứ 4 chuyển vị trị được dịch tới về kí tự tương ứng trong bảng chữ cái.
 
 Chương trình mã hóa bức điện đầy đủ như sau:
 
