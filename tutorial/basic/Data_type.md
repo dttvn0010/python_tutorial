@@ -4,10 +4,10 @@ Mỗi biến số sau khi được khai báo sẽ chứa giá trị nhất đị
 Nếu giải các bài toán trong cuộc sống, chúng ta ít quan tâm đến kiểu dữ liệu, vì giá trị của các biến số luôn là các con số. Trên máy tính, ngoài dữ liệu kiểu số (vốn là kiểu dữ liệu thông dụng nhất), còn có dữ liệu kiểu văn bản. Một số loại biến số dùng kiểu dữ liệu này là tên, địa chỉ, số điện thoại ...
 
 Ngoài ra trong Python còn có các kiểu dữ liệu khác mà chúng ta sẽ làm quen dần ở các phần sau, đó là :
-	- Kiểu danh sách (List)
-	- Kiểu nhóm (Tuple)
-	- Kiểu tập hợp (Set)
-	- Kiểu từ điển (Dictionary)
+  - Kiểu danh sách (List)
+  - Kiểu nhóm (Tuple)
+  - Kiểu tập hợp (Set)
+  - Kiểu từ điển (Dictionary)
 
 Chúng ta tạm quan tâm tới 2 kiểu dữ liệu chính là kiểu số và kiểu văn bản.
 
@@ -20,8 +20,8 @@ z = x + y
 ```
 
 Với Python (và với lập trình trên máy tính nói chung), dữ liệu kiểu số được chia thành 2 loại:
-	- Kiểu số nguyên
-	- Kiểu số thập phân
+  - Kiểu số nguyên
+  - Kiểu số thập phân
 
 Lí do của việc chia này là việc tính toán trên số nguyên nhanh hơn tính toán với số thập phân, do đó trong các bài toán chỉ cần thao tác với các giá trị số nguyên thì ưu tiên dùng kiểu dữ liệu số nguyên để tăng tốc độ tính toán. Tuy nhiên ngày nay, tốc độ tính toán của máy tính với 2 kiểu dữ liệu trên đều rất nhanh, do đó bạn có thể không cần quan tâm đến sự khác biệt của 2 loại này, và sử dụng kiểu số thập phân chung cho tất cả các giá trị số.
 
