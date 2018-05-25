@@ -39,7 +39,7 @@ text[start:end]
 ```
 Trong đó ```start```, ```end``` là vị trí bắt đầu và kết thúc của xâu con chúng ta muốn lấy ra. Lưu ý :
  - Kí tự đầu tiên trong xâu có vị trí là 0
- - Kí tự ở vị trị ```end`` không bao gồm trong xâu con lấy ra, tức xâu con gồm các kí tự từ 0 đến ```end-1```
+ - Kí tự ở vị trị ```end``` không bao gồm trong xâu con lấy ra, tức xâu con gồm các kí tự từ 0 đến ```end-1```
 
 Ví dụ:
 ```python
@@ -60,6 +60,7 @@ Trong Python, có thể dùng chỉ số âm, khi đó vị trí phần tử đa
 text = 'Chào bạn'
 print(text[-1])
 print(text[-3:])
+```
 
 ## Ví dụ
 
@@ -171,4 +172,4 @@ print(dec_msg)
 Bạn hãy kiểm tra xem bức điện Bình nhận được có giống bức điện gốc trước khi mã hóa của An không.
 
 
-[Tiếp theo](Function.md)
+[Tiếp theo](List.md)

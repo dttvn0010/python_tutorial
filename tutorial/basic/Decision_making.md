@@ -159,7 +159,7 @@ else:
     print('Không tồn tại ngày này')
 ```
 
-### Ví dụ 4
+### Ví dụ 5
 Chỉ số BMI (Body mass index) dùng để đánh giá thân hình của một người. Chỉ số này được đo bằng tỉ số giữa cân nặng (tính theo kg) và bình phương của chiều cao (tính theo mét).
 Dựa vào chỉ số BMI, người ta có thể đánh giá được thân hình của một người:
  - BMI nhỏ hơn 15 : thân hình quá gầy

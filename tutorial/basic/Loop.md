@@ -138,4 +138,4 @@ Giải thích:
  - Ở mỗi bước, máy tính tính giá trị chính giữa của khoảng giá trị ```mid = (low+high)//2```, sau đó hỏi bạn số bạn nghĩ có lớn hơn điểm giữa đó không. Dựa vào câu trả lời của bạn, máy tính sẽ thu hẹp khoảng giá trị chứa số bạn nghĩ.
  - Sau mỗi câu hỏi, khoảng giá trị chứa số bạn nghĩ sẽ bị thu hẹp đi một nửa. Vì ban đầu khoảng này có độ rộng là 1000, nhỏ hơn 2 mũ 10 (1024), nên sau không quá 10 câu hỏi, độ rộng khoảng này sẽ thu về 1 và máy tính sẽ xác định được số bạn đang nghĩ là bao nhiêu. Điều kiện ```low + 1 != high``` là điều kiện giúp máy tính kiểm tra khoảng giá trị đã thu về 1 điểm hay chưa.
 
-[Tiếp theo](String.md)
+[Tiếp theo](Function.md)
