@@ -74,7 +74,7 @@ equal_sign = '='
 print(x, plus_sign, y, equal_sign, z)
 ```
 
-Như vậy, lệnh ```print``` sẽ in ra các biến theo thứ tự : x, plus_sign, y, equal_sign, z.
+Như vậy, lệnh ```print``` sẽ in ra các biến theo thứ tự : ```x, plus_sign, y, equal_sign, z```.
 Do vậy bạn sẽ nhìn thấy trên màn hình kết quả :
 	1 + 2 = 3
 
