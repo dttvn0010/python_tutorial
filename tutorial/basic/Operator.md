@@ -65,7 +65,8 @@ Kết quả in ra sẽ là 1.67
 
 ### Giá trị tuyệt đối
 Lệnh ```abs``` được dùng để lấy giá trị tuyệt đối của một số:
-```
+
+```python
 print(abs(2))
 print(abs(-2))
 ```
