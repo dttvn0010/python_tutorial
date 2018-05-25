@@ -19,18 +19,9 @@ print(3-2)
 print(3*4)
 print(1/2)
 ```
-
-Ngoài ra, Python cho phép dùng các phép toán rút gọn ```+=, -=, *=, /=```. Ý nghĩa như sau:
-
-```a += b``` tương đương với ```a = a + b```
-
-```a -= b``` tương đương với ```a = a - b```
-
-...
-
 Bạn hãy chạy thử chạy chương trình trên và quan sát kết quả có như bạn ước tính hay không.
 
-Ngoài ra trong Python còn phép chia số nguyên (//), và phép lấy phần dư (%). Hai phép tính này thực hiện trên các số nguyên. Ví dụ:
+Trong Python còn phép chia số nguyên (//), và phép lấy phần dư (%). Hai phép tính này thực hiện trên các số nguyên. Ví dụ:
 
 ```python
 print(10 // 3)
@@ -44,6 +35,15 @@ Trong Python, 2 dấu * viết liền nhau được dùng để biểu thị ph�
 print(2 ** 10)
 ```
 Kết quả trả về 2 mũ 10, tức 1024
+
+Ngoài ra, Python cho phép dùng các phép toán rút gọn ```+=, -=, *=, /=, ...```. Ý nghĩa như sau:
+
+```a += b``` tương đương với ```a = a + b```
+
+```a -= b``` tương đương với ```a = a - b```
+
+...
+
 
 Để làm tròn một số thập phân, bạn có thể dùng lệnh ```round``` :
 
