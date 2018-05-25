@@ -11,7 +11,7 @@ Python hỗ trợ các phép tính toán học thông dụng. Để giải các 
   - Phép làm tròn số (round)
   - Phép lấy giá trị tuyệt đối (abs)
 
-Các phép tính + , - , *, / đều quen thuộc với chúng ta. Ví dụ :
+Các phép tính ```+ , - , *, /``` đều quen thuộc với chúng ta. Ví dụ :
 
 ```python
 print(1+2)
@@ -19,6 +19,11 @@ print(3-2)
 print(3*4)
 print(1/2)
 ```
+
+Ngoài ra, Python cho phép dùng các phép toán rút gọn ```+=, -=, *=, /=```. Ý nghĩa như sau:
+```a += b``` tương đương với ```a = a + b```
+```a -= b``` tương đương với ```a = a - b```
+...
 
 Bạn hãy chạy thử chạy chương trình trên và quan sát kết quả có như bạn ước tính hay không.
 

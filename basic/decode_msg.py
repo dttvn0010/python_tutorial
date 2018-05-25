@@ -8,17 +8,18 @@ Chương trình giải mã bức điện
     + Nội dung bức điện gốc 
 """
 
-encode_key = 10
-key = 25 - encode_key
-msg = 'EYS XKJ MY NS MRYS URYXQ'
+k = 10
+k = 26 - k
+msg = 'DYS XKI MY NS MRYS URYXQ'
 
 dec_msg = ''
 for c in msg:
     if c == ' ':
         dec_msg += c
     else:
-        x = ord(c) - ord('A') + key
-        x = x % 25
+        x = ord(c) - ord('A')
+        x += k
+        x = x % 26
         x = x + ord('A')
         dec_msg += chr(x)
 
