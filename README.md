@@ -1,6 +1,6 @@
 # Học lập trình Python
 
-[Python cơ bản](tutorial/basic/BASIC_PYTHON.md)
+[Python cơ bản](tutorial/basic/Intro.md)
 
 [Học vẽ với Turtle](tutorial/turtle/TURTLE.md)
 
