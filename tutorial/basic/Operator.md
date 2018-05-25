@@ -62,4 +62,4 @@ Các hàm thông dụng trong thư viện toán học:
  - Hàm phần nguyên ```floor```, hàm phần nguyên trên ```ceil```
  - Hàm logarith: ```log``` (cơ số e), ```log10``` (cơ số 10)
 
-
+[Tiếp theo](Decision_making.md)

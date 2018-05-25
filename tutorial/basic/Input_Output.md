@@ -78,5 +78,7 @@ Như vậy, lệnh ```print``` sẽ in ra các biến theo thứ tự : ```x, pl
 Do vậy bạn sẽ nhìn thấy trên màn hình kết quả :
 	1 + 2 = 3
 
-Dần dần bạn sẽ quen với cách viết ```print``` ở trên để đưa kết quả ra màn hình.
+Bạn sẽ quen dần với cách viết ```print``` ở trên để đưa kết quả ra màn hình khi viết các chương trình về sau.
+
+[Tiếp theo](Operator.md)
 
