@@ -9,6 +9,7 @@ Python hỗ trợ các phép tính toán học thông dụng. Để giải các 
   - Phép lấy phần dư (%)
   - Phép lũy thừa (**)
   - Phép làm tròn số (round)
+  - Phép lấy giá trị tuyệt đối (abs)
 
 Các phép tính + , - , *, / đều quen thuộc với chúng ta. Ví dụ :
 
@@ -48,6 +49,12 @@ Lệnh ```round``` còn có thể làm tròn theo một số lượng chữ số
 print(round(1.66666, 2))
 ```
 Kết quả in ra sẽ là 1.67
+
+Lệnh ```abs``` được dùng để lấy giá trị tuyệt đối của một số:
+```
+print(abs(2))
+print(abs(-2))
+```
 
 Ngoài ra, bạn có thể sử dụng các hàm toán học từ thư viện ```math``` của Python, ví dụ:
 
