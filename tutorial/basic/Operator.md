@@ -84,6 +84,7 @@ import math
 print(math.sin(math.pi/2))
 ```
 
+## Ví dụ
 Để quen với các phép tính, chúng ta hãy xem xét một số ví dụ sau.
 
 ### Ví dụ 1

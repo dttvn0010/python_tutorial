@@ -40,6 +40,8 @@ Lưu ý:
  - Cuối các dòng của lệnh ```if``` hoặc ```else``` là dấu 2 chấm. Python sử dụng dấu 2 chấm để bắt đầu cho một khối lệnh con, bạn sẽ quen dần với điều này.
  - Các lệnh bên dưới ```if``` hoặc ```else``` cần được viết lùi vào bởi một số khoảng trắng (thường là 4), nếu có nhiều hơn một lệnh thì chúng phải được viết thẳng hàng.
 
+## Ví dụ
+
 ### Ví dụ 1
 So sánh 2 số sau:
  - A = 1999 * 2001

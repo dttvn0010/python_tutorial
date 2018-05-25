@@ -29,6 +29,8 @@ Ví dụ:
 
 Chúng ta sẽ xem xét một số chương trình ví dụ sau.
 
+### Ví dụ
+
 #### Ví dụ 1
 Tính tổng các số nguyên từ 1 đến 100
 
@@ -81,6 +83,8 @@ while dieukien:
 ```
 
 Cấu trúc trên có nghĩa : Chừng nào điều kiện ```dieukien``` còn đúng thì thực hiện khối lệnh ```khoi_lenh```.
+
+### Ví dụ
 
 #### Ví dụ 1
 Kiểm tra số 8477216359 có phải số nguyên tố không.

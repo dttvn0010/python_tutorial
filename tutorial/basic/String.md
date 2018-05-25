@@ -61,8 +61,9 @@ text = 'Chào bạn'
 print(text[-1])
 print(text[-3:])
 
-Để hiểu hơn về dữ liệu kiểu văn bản, chúng ta hãy xem xét một số ví dụ sau.
+## Ví dụ
 
+Để hiểu hơn về dữ liệu kiểu văn bản, chúng ta hãy xem xét một số ví dụ sau.
 
 ### Ví dụ 1
 Nhập vào từ bàn phím một số tự nhiên và in ra biểu diễn nhị phân của số đó.
