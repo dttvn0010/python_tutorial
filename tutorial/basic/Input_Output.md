@@ -55,7 +55,7 @@ print(x, '+', y , '=', z)
 
 Chương trình trên sẽ in ra : 1 + 2 = 3
 
-Với các bạn đã biết về lập trình thì lệnh ```print``` ở trên khá đơn giản. Tuy nhiên, nếu bạn hoàn toàn mới với lập trình và cảm thấy lệnh ```print``` ở dòng cuối chương trình trên hơi khó hiểu. 
+Với các bạn đã biết về lập trình thì lệnh ```print``` ở trên khá đơn giản. Tuy nhiên, nếu bạn hoàn toàn mới với lập trình thì có thể cảm thấy lệnh ```print``` ở dòng cuối chương trình trên hơi khó hiểu. 
 
 ```python
 print(x, '+', y , '=', z)
