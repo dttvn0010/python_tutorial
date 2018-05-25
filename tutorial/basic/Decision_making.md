@@ -76,8 +76,8 @@ else:
 ```
 
 ### Ví dụ 3:
-Chỉ số BMI (Body mass index) dùng để đánh giá thân hình của một người. Chỉ số này được đo bằng tỉ số giữa cân nặng(tính theo kg) và bình phương của chiều cao (tính theo mét).
-Dựa vào chỉ số BMI, người ta có thể đánh giá được thân hình của một người:BM
+Chỉ số BMI (Body mass index) dùng để đánh giá thân hình của một người. Chỉ số này được đo bằng tỉ số giữa cân nặng (tính theo kg) và bình phương của chiều cao (tính theo mét).
+Dựa vào chỉ số BMI, người ta có thể đánh giá được thân hình của một người:
  - BMI nhỏ hơn 15 : thân hình quá gầy
  - BMI từ 15 đến 16 : thân hình gầy
  - BMI từ 16 đến 18.5 : thân hình hơi gầy
@@ -88,7 +88,7 @@ Dựa vào chỉ số BMI, người ta có thể đánh giá được thân hìn
 
 Nhập vào giá trị chiều cao và cân nặng của một người từ bàn phím và cho biết tình trạng thân hình của người đó.
 
-```
+```python
 height = input('Chiều cao (mét) : ')
 height = float(height)
 
