@@ -11,6 +11,7 @@ Python hỗ trợ các phép tính toán học thông dụng. Để giải các 
   - Phép làm tròn số (round)
   - Phép lấy giá trị tuyệt đối (abs)
 
+### Phép tính số học
 Các phép tính ```+ , - , *, /``` đều quen thuộc với chúng ta. Ví dụ :
 
 ```python
@@ -21,6 +22,7 @@ print(1/2)
 ```
 Bạn hãy chạy thử chạy chương trình trên và quan sát kết quả có như bạn ước tính hay không.
 
+### Phép chia và lấy phần dư trên số nguyên
 Trong Python còn phép chia số nguyên (//), và phép lấy phần dư (%). Hai phép tính này thực hiện trên các số nguyên. Ví dụ:
 
 ```python
@@ -30,13 +32,15 @@ print(10 % 3)
 
 Giá trị in ra màn hình là 3 và 1, tức 10 chia 3 được 3, dư 1.
 
+### Phép lũy thừa
 Trong Python, 2 dấu * viết liền nhau được dùng để biểu thị phép lũy thừa :
 ```python
 print(2 ** 10)
 ```
 Kết quả trả về 2 mũ 10, tức 1024
 
-Ngoài ra, Python cho phép dùng các phép toán rút gọn ```+=, -=, *=, /=, ...```. Ý nghĩa như sau:
+### Phép tính dạng rút gọn
+Python cho phép dùng các phép toán rút gọn ```+=, -=, *=, /=, ...```. Ý nghĩa như sau:
 
 ```a += b``` tương đương với ```a = a + b```
 
@@ -45,6 +49,7 @@ Ngoài ra, Python cho phép dùng các phép toán rút gọn ```+=, -=, *=, /=,
 ...
 
 
+### Làm tròn số thập phân
 Để làm tròn một số thập phân, bạn có thể dùng lệnh ```round``` :
 
 ```python
@@ -58,24 +63,26 @@ print(round(1.66666, 2))
 ```
 Kết quả in ra sẽ là 1.67
 
+### Giá trị tuyệt đối
 Lệnh ```abs``` được dùng để lấy giá trị tuyệt đối của một số:
 ```
 print(abs(2))
 print(abs(-2))
 ```
 
-Ngoài ra, bạn có thể sử dụng các hàm toán học từ thư viện ```math``` của Python, ví dụ:
-
-```python
-import math
-print(math.sin(math.pi/2))
-```
+### Các hàm toán học
+Ngoài các phép tính ở trên, bạn có thể sử dụng các hàm toán học từ thư viện ```math``` của Python.
 
 Các hàm thông dụng trong thư viện toán học:
  - Các hàm lượng giác : ```sin, cos, tan, asin, acos, atan```
  - Hàm căn bậc 2 : ```sqrt```
  - Hàm phần nguyên ```floor```, hàm phần nguyên trên ```ceil```
  - Hàm logarith: ```log``` (cơ số e), ```log10``` (cơ số 10)
+
+```python
+import math
+print(math.sin(math.pi/2))
+```
 
 Để quen với các phép tính, chúng ta hãy xem xét một số ví dụ sau.
 
