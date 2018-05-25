@@ -32,8 +32,9 @@ Cấu trúc trên có nghĩa : Nếu điều kiện 1 đúng thì thực hiện 
 
 Điều kiện trong câu lệnh ```if``` là điều kiện logic, chỉ có giá trị đúng (True) hoặc sai (False). Các phép tính sử dụng trong các biểu thức điều kiện này là:
  - Các phép so sánh : lớn hơn (>), nhỏ hơn (<), lớn hơn hoặc bằng (>=), nhỏ hơn hoặc bằng (<=), bằng nhau (==), khác nhau (!=)
- - Phép "và" (and): ```dieukien1 and dieukien2 ``` có giá trị True nếu cả 2 điều kiện thành phần đúng
- - Phép "hoặc" (or): ```dieukien1 or dieukien2 ``` có giá trị True nếu ít nhất 1 trong 2 điều kiện thành phần đúng
+ - Phép phủ định ```not``` : ```not dieukien``` có giá trị True nếu điều kiện sai và ngược lại
+ - Phép "và" ```and``` : ```dieukien1 and dieukien2 ``` có giá trị True nếu cả 2 điều kiện thành phần đúng
+ - Phép "hoặc" ```or``` : ```dieukien1 or dieukien2 ``` có giá trị True nếu ít nhất 1 trong 2 điều kiện thành phần đúng
 
 Lưu ý:
  - Cuối các dòng của lệnh ```if``` hoặc ```else``` là dấu 2 chấm. Python sử dụng dấu 2 chấm để bắt đầu cho một khối lệnh con, bạn sẽ quen dần với điều này.
