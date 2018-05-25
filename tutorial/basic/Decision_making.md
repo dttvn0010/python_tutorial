@@ -85,7 +85,7 @@ Tìm 2 số khi biết tổng và tích. Nhập vào từ bàn phím các giá t
 Lời giải:
 
 Theo định lý Viét, 2 số cần tìm là nghiệm phương trình bậc 2:
- - x*x - S*x + P = 0
+  ```x*x - S*x + P = 0```
 
 Dựa trên việc giải biện luận phương trình bậc 2 trên, chúng ta biết có tồn tại 2 số cần tìm không. 
 
@@ -113,6 +113,7 @@ print('b = ', b)
 
 ### Ví dụ 4
 Nhập vào từ bàn phím 3 giá trị ngày, tháng, năm (trong thế kỉ 21). Kiểm tra ngày đó có tồn tại không.
+
 Ví dụ:
  - Ngày 29/2/2000 : có tồn tại
  - Ngày 29/2/2001 : không tồn tại
@@ -122,10 +123,11 @@ Ví dụ:
 Lời giải:
 
 Chúng ta có thể kiểm tra sự tồn tại của một bộ giá trị (ngày, tháng, năm) như sau:
- - Nếu ngày, tháng, năm nhỏ hơn hoặc bằng 0 -> ngày không tồn tại
- - Nếu tháng lớn hơn 12 -> ngày không tồn tại
+ - Nếu ngày, tháng, năm nhỏ hơn hoặc bằng 0 -> ngày đó không tồn tại
+ - Nếu tháng lớn hơn 12 -> ngày đó không tồn tại
  - Tính số ngày trong tháng
  - Nếu ngày lớn hơn số ngày trong tháng -> ngày đó không tồn tại, còn nếu không thì ngày đó tồn tại
+
 Tháng 2 có 28 ngày vào năm thường, 29 ngày vào năm nhuận. Trong thế kỉ 21, các năm nhuận là các năm chia hết cho 4.
 
 Chương trình Python:

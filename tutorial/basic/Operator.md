@@ -114,8 +114,8 @@ Tìm 2 số biết tổng và tỉ số của chúng. Nhập từ bàn phím cá
 Lời giải:
 
 Bạn có thể xây dựng công thức tìm 2 số khi biết tổng (S), và tỉ số (R), kết quả như sau:
- - Số thứ nhất = S/(1+R)
- - Số thứ hai = R*S/(1+R)
+ - Số thứ nhất = ```S/(1+R)```
+ - Số thứ hai = ```R*S/(1+R)```
 
 Chương trình Python:
 
@@ -155,7 +155,7 @@ Trên mặt phẳng cho 3 điểm có tọa độ (0, 0), (1, 1), (2, 3). Tính 
 
 Lời giải:
 Để tích diện tích một tam giác tạo thành từ 3 điểm, ta sử dụng công thức diện tích tam giác do 2 vector tạo thành (X1, Y1) , (X2, Y2) là:
- - S = |X1*Y1 - X2*Y2|
+	```S = |X1*Y1 - X2*Y2|```
 
 Như vậy, cần lấy một điểm trong 3 điểm làm mốc, tính tọa độ 2 vector xuất phát từ điểm đó đến 2 điểm còn lại, sau đó sử dụng công thức ở trên. 
 
@@ -224,13 +224,13 @@ Trước hết chúng ta phải lập công thức tính khoảng cách giữa 2
 Ở phạm vi nhỏ, chúng ta có thể coi tọa độ vĩ độ là tọa độ theo trục y, tọa độ kinh độ là tọa độ theo trục x.
 
 Nếu 2 điểm có cùng kinh độ, còn vĩ độ là vd1 và vd2 thì khoảng cách giữa chúng là (bạn có thể tự chứng minh):
- - dy = R * PI * (vd2-vd1)/180
+  ```dy = R * PI * (vd2-vd1)/180```
 
 Nếu 2 điểm có cùng vĩ độ vd, còn kinh độ là kd1 và kd2 thì khoảng cách giữa chúng là (bạn có thể tự chứng minh):
- - dx = R * cos(PI * vd/180) * (kd2-kd1)/180
+  ```dx = R * cos(PI * vd/180) * (kd2-kd1)/180```
 
 Từ đó chúng ta tính được khoảng cách giữa 2 điểm theo công thức:
- - distance = sqrt(dx*dx + dy*dy)
+  ```distance = sqrt(dx*dx + dy*dy)```
 
 Chương trình Python:
 

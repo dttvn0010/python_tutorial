@@ -18,9 +18,9 @@ Như vậy cấu trúc ```for``` ở trên có nghĩa : với mỗi giá trị `
 
 Các cách biểu diễn tập giá trị lặp thông dụng:
  - Liệt kê các thành phần. Ví dụ [1, 2, 3, 4, 5]. Đây thực chất là dữ liệu kiểu danh sách mà chúng ta sẽ biết ở các phần sau.
- - Dùng khoảng ```range(end)``` : bao gồm các số tự nhiên từ 0 đến trước ```end```. Lưu ý, với Python (và nhiều ngôn ngữ lập trình), khoảng này không chứa giá trị ```end```, tức giá trị cuối của khoảng là ```end-1```
- - Dùng khoảng ```range(start, end)``` bao gồm các số nguyên bắt đầu từ ```start``` đến trước ```end```. 
- - Dùng khoảng ```range(start, end, increment)```  bao gồm các số nguyên từ ```start``` đến trước ```end``` và tăng đều theo khoảng cách ```increment```
+ - Khoảng ```range(end)``` : bao gồm các số tự nhiên từ 0 đến trước ```end```. Lưu ý, với Python (và nhiều ngôn ngữ lập trình), khoảng này không chứa giá trị ```end```, tức giá trị cuối của khoảng là ```end-1```
+ - Khoảng ```range(start, end)``` bao gồm các số nguyên bắt đầu từ ```start``` đến trước ```end```. 
+ - Khoảng ```range(start, end, increment)```  bao gồm các số nguyên từ ```start``` đến trước ```end``` và tăng đều theo khoảng cách ```increment```
 
 Ví dụ:
  - range(5) gồm : 0, 1, 2, 3, 4
@@ -47,7 +47,7 @@ Như chúng ta biết ở trên, khoảng ```range(start, end)``` bao gồm các
 #### Ví dụ 2
 Tính tổng:
 
-S = 1/(1*2) + 1/(2*3) + 1/(3*4) + ... + 1/(999*1000)
+```S = 1/(1*2) + 1/(2*3) + 1/(3*4) + ... + 1/(999*1000)```
 
 Lời giải:
 
@@ -89,7 +89,7 @@ Lời giải:
 
 Để kiểm tra một số có phải số nguyên tố hay không, chúng ta cần kiểm tra số đó có chia hết cho số nguyên tố nào trong phạm vi từ 2 đến căn bậc 2 của số đó hay không. Tuy nhiên do chúng ta không có danh sách các số nguyên tố, chúng ta có thể dùng cách kiểm tra số đó có chia hết cho số tự nhiên nào từ 2 đến căn bậc 2 của số đó không.
 
-Chương trình Python như sau:
+Chương trình Python:
 
 ```python
 x = 8477216359
