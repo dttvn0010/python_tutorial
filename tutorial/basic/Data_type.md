@@ -42,15 +42,7 @@ hoten = 'Nguyễn Văn An'
 diachi = "Hà Nội"
 ```
 
-Giá trị của một biến kiểu văn bản được đặt trong 2 kí tự nháy đơn '', hoặc 2 kí tự nháy kép "".
-Ngoài ra nếu văn bản gồm nhiều dòng, giá trị văn bản sẽ được mở đầu và kết thúc bằng 3 kí tự nháy kép """, ví dụ
-
-```python
-text = """ 
- Cộng hòa xã hội chủ nghĩa Việt Nam
-    Độc lập - Tự do - Hạnh phúc
-"""
-```
+Giá trị của một biến kiểu văn bản được đặt trong 2 kí tự nháy đơn ('), hoặc 2 kí tự nháy kép (").
 
 Chúng ta sẽ tìm hiểu về các phép tính xử lý kiểu dữ liệu văn bản ở các phần sau.
 

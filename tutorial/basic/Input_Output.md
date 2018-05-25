@@ -20,11 +20,9 @@ ten = input('Mời bạn cho biết tên của bạn : ')
 print('Xin chào ', ten)
 ```
 
-Dòng đầu của chương trình in ra thông báo yêu cầu cần nhập dữ liệu, sau đó đợi cho người dùng nhập vào giá trị, ở đây là tên của người đó. Giá trị đã nhập vào sẽ được lưu vào biến ```ten``` có kiểu dữ liệu là kiểu văn bản (String). Dòng sau in ra lời chào đi kèm với giá trị tên vừa được nhập vào, chúng ta sẽ tìm hiểu cách thức in ra này ở phần sau của bài này.
-
 Lệnh ```input``` của Python luôn trả về dữ liệu ở dạng văn bản. Trong trường hợp chúng ta muốn nhập giá trị vào cho một biến ở kiểu số, chúng ta phải dùng lệnh chuyển đổi từ văn bản sang số :
-	- Lệnh ```int(text)``` chuyển giá trị văn bản ```text``` thành số nguyên
-	- Lệnh ```float(text)``` chuyển giá trị văn bản ```text``` sang số thập phân
+  - Lệnh ```int(text)``` chuyển giá trị văn bản ```text``` thành số nguyên
+  - Lệnh ```float(text)``` chuyển giá trị văn bản ```text``` sang số thập phân
 
 Ví dụ:
 
@@ -63,7 +61,7 @@ Với các bạn đã biết về lập trình thì lệnh ```print``` ở trên
 print(x, '+', y , '=', z)
 ```
 
-Danh sách các biến in ra trong lệnh ```print``` ở trên có lẫn cả biến đã khai báo (x,y,z) và cả các hằng số ('+', '='), cách viết này sẽ khiến người mới biết về lập trình hơi khó hiểu, nhưng đó là cách được sử dụng rất phổ biến trong tất cả các ngôn ngữ lập trình.
+Danh sách các biến in ra trong lệnh ```print``` ở trên có lẫn cả biến đã khai báo (x, y, z) và cả các hằng số ('+', '='), cách viết này sẽ khiến người mới biết về lập trình hơi khó hiểu, nhưng đó là cách được sử dụng rất phổ biến trong tất cả các ngôn ngữ lập trình.
 
 Thực chất, chương trình ở trên tương đương với:
 
@@ -77,11 +75,11 @@ print(x, plus_sign, y, equal_sign, z)
 ```
 
 Như vậy, lệnh ```print``` sẽ in ra các biến theo thứ tự :
-	- x          :   1
-	- plus_sign  :   +
-	- y          :   2
-    - equal_sign :   =
-    - z          :   3
+  - x          :   1
+  - plus_sign  :   +
+  - y          :   2
+  - equal_sign :   =
+  - z          :   3
 
 Do vậy bạn sẽ nhìn thấy trên màn hình:
 	1 + 2 = 3
