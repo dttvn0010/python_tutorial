@@ -16,6 +16,7 @@ Các phép tính thông dụng về dữ liệu văn bản trong Python:
  - Phép ```+``` 2 chuỗi : ghép 2 xâu văn bản thành một
  - Hàm ```lower``` chuyển văn bản sang chữ thường, hàm ```upper``` chuyển văn bản sang chữ hoa
  - Hàm ```replace``` : thay nội dung một xâu con trong xâu văn bản
+ - Hàm ```split``` : tách một xâu thành các xâu con
 
 Ví dụ:
  - str(1000) -> '1000'
@@ -23,6 +24,8 @@ Ví dụ:
  - 'Chào bạn'.lower() -> 'chào bạn'
  - 'Chào bạn'.upper() -> 'CHÀO BẠN'
  - 'Tôi sống ở Hà Nội'.replace('Hà Nội', 'Huế') -> 'Tôi sống ở Huế'
+ - 'Hà Nội'.split() -> ['Hà', 'Nội']
+ - 'Hà Nội, Việt Nam'.split(',') -> ['Hà Nội', 'Việt Nam']
 
 Ngoài ra, mỗi xâu văn bản có thể coi là một tập các kí tự, chúng ta có thể dùng vòng lặp ```for``` trên tập này:
 
