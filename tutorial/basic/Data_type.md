@@ -23,7 +23,7 @@ Với Python (và với lập trình trên máy tính nói chung), dữ liệu k
   - Kiểu số nguyên
   - Kiểu số thập phân
 
-Lí do của việc chia này là việc tính toán trên số nguyên nhanh hơn tính toán với số thập phân, do đó trong các bài toán chỉ cần thao tác với các giá trị số nguyên thì ưu tiên dùng kiểu dữ liệu số nguyên để tăng tốc độ tính toán. Tuy nhiên ngày nay, tốc độ tính toán của máy tính với 2 kiểu dữ liệu trên đều rất nhanh, do đó bạn có thể không cần quan tâm đến sự khác biệt của 2 loại này, và sử dụng kiểu số thập phân chung cho tất cả các giá trị số.
+Kiểu số nguyên là kiểu chúng ta vẫn sử dụng trong các chương trình trước đây.
 
 Với kiểu số thập phân, cách khai báo trong Python như sau:
 

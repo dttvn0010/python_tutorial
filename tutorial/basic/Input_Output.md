@@ -61,7 +61,7 @@ Với các bạn đã biết về lập trình thì lệnh ```print``` ở trên
 print(x, '+', y , '=', z)
 ```
 
-Danh sách các biến in ra trong lệnh ```print``` ở trên có lẫn cả biến đã khai báo (x, y, z) và cả các hằng số ('+', '='), cách viết này sẽ khiến người mới biết về lập trình hơi khó hiểu, nhưng đó là cách được sử dụng rất phổ biến trong tất cả các ngôn ngữ lập trình.
+Danh sách các biến in ra trong lệnh ```print``` ở trên có lẫn cả biến đã khai báo (x, y, z) và cả các hằng số ('+', '='), cách viết này sẽ khiến người mới biết về lập trình hơi khó hiểu, nhưng đó là cách được sử dụng rất phổ biến trong các ngôn ngữ lập trình.
 
 Thực chất, chương trình ở trên tương đương với:
 
