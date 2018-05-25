@@ -101,7 +101,7 @@ Cách thức thực hiện như sau:
 
 Chương trình Python:
 
-```
+```python
 def f(x):
     return x*x*x + x - 1
 
