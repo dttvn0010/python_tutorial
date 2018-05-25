@@ -1,13 +1,13 @@
 ## Biến số
-
-Biến số dùng để lưu giá trị trung gian trong quá trình tính toán:
+Biến số là khái niệm cơ bản nhất trong các chương trình. Chúng được dùng để lưu giá trị trung gian trong quá trình tính toán.
+Bạn hãy nhớ lại chương trình ở phần mở đầu :
 
 ```python
 tuoiAn = 10
 tuoiBinh = tuoiAn - 2
 ```
 
-Ở chương trình trên, ```tuoiAn```, ```tuoiBinh``` là các biến số. 
+Ở chương trình này, ```tuoiAn```, ```tuoiBinh``` là các biến số. 
 Để khai báo một biến số, chúng ta sử dụng cú pháp :
 
 ```
@@ -47,4 +47,6 @@ Sau chương trình trên, giá trị của x cũng sẽ bằng 2.
 ```
 del bienSo
 ```
+
+[Tiếp theo](Data_type.md)
 
