@@ -21,8 +21,11 @@ print(1/2)
 ```
 
 Ngoài ra, Python cho phép dùng các phép toán rút gọn ```+=, -=, *=, /=```. Ý nghĩa như sau:
+
 ```a += b``` tương đương với ```a = a + b```
+
 ```a -= b``` tương đương với ```a = a - b```
+
 ...
 
 Bạn hãy chạy thử chạy chương trình trên và quan sát kết quả có như bạn ước tính hay không.
