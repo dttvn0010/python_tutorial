@@ -3,15 +3,18 @@ import pygame, time, sys
 WHITE = 255, 255, 255
 GREEN = 0, 255, 0
 
-ndisks = 4
+N = 4
 screenX, screenY = 640, 480
 
 column_width = screenX/3
-disk_height = screenY/ndisks
+disk_height = screenY/N
 
 disks = [[], [], []]
 
 screen = pygame.display.set_mode((screenX, screenY))
+
+pygame.font.init()
+font = pygame.font.SysFont('Calibri', 36, bold=True)
 
 def getRect(disk):
     xcenter = (disk['column'] + 0.5) * column_width
@@ -34,8 +37,8 @@ def pushDisk(disk, column):
 def popDisk(column):
     disks[column].pop()
 
-for i in range(ndisks):
-    disk = {'width' : column_width * (ndisks - i) / ndisks}
+for i in range(N):
+    disk = {'width' : column_width * (N - i) / N}
     pushDisk(disk, 0)
 
 move_disk = None
@@ -82,10 +85,10 @@ while True:
     if move_disk != None:
         pygame.draw.rect(screen, GREEN, move_rect)
 
+    if len(disks[2]) == N:
+        text = font.render('Well done!', False, (255, 0, 0))
+        screen.blit(text, (280, 200))        
+
     pygame.display.flip()
 
     time.sleep(0.01)
-
-    if len(disks[2]) == ndisks:
-        time.sleep(1)
-        sys.exit()

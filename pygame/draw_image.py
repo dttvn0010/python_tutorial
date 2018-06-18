@@ -1,24 +1,23 @@
 import pygame, sys
+import math
 
 WHITE = 255, 255, 255
-RED = 255, 0, 0
 
 screenX, screenY = 640, 480
 screen = pygame.display.set_mode((screenX, screenY))
+screen.fill(WHITE)
 
 ball_size = 80
 x = (screenX - ball_size)/2
 y = (screenY - ball_size)/2
 
-clock = pygame.time.Clock()
+image = pygame.image.load('ball.png')
+image = pygame.transform.scale(image, (ball_size, ball_size))
+screen.blit(image, pygame.Rect(x, y, ball_size, ball_size))
+
+pygame.display.flip()
 
 while True:
-    clock.tick(100)
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT: 
             sys.exit()
-
-    screen.fill(WHITE)
-    pygame.draw.ellipse(screen, RED, pygame.Rect(x, y, ball_size, ball_size))
-    pygame.display.flip()

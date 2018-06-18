@@ -3,11 +3,11 @@ import pygame, time, sys
 WHITE = 255, 255, 255
 GREEN = 0, 255, 0
 
-ndisks = 4
+N = 4
 screenX, screenY = 640, 480
 
 column_width = screenX/3
-disk_height = screenY/ndisks
+disk_height = screenY/N
 
 disks = [[], [], []]
 
@@ -27,8 +27,8 @@ def pushDisk(disk, column):
 def popDisk(column):
     disks[column].pop()
 
-for i in range(ndisks):
-    disk = {'width' : column_width * (ndisks - i) / ndisks}
+for i in range(N):
+    disk = {'width' : column_width * (N - i) / N}
     pushDisk(disk, 0)
 
 move_disk = None

@@ -30,14 +30,11 @@ while True:
         if event.type == pygame.QUIT: 
             sys.exit()
 
+    angle += 1
     phi = abs(angle%360 - 180) * math.pi/180
     x = screenX/2 + rod * math.cos(phi)
-    y = rod * math.sin(phi)
-    
-    angle += 1
-            
-    screen.fill(WHITE)    
-    
+    y = rod * math.sin(phi)    
+                
+    screen.fill(WHITE)     
     draw_rod(x, y, phi)
-
     pygame.display.flip()

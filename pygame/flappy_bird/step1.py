@@ -1,5 +1,6 @@
 import sys, pygame
 
+WHITE = 255, 255, 255
 screenSize = screenX, screenY = 640, 480
 screen = pygame.display.set_mode(screenSize)
 
@@ -19,6 +20,6 @@ while True:
         if event.type == pygame.QUIT: 
             sys.exit()
 
-    screen.fill((255, 255, 255))
+    screen.fill(WHITE)
     screen.blit(image, pygame.Rect(x, y, bird_size, bird_size))
     pygame.display.flip()

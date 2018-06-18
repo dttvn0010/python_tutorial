@@ -4,11 +4,11 @@ import pygame, time, sys
 WHITE = 255, 255, 255
 GREEN = 0, 255, 0
 
-ndisks = 4
+N = 4
 screenX, screenY = 640, 480
 
 column_width = screenX/3
-disk_height = screenY/ndisks
+disk_height = screenY/N
 
 disks = [[], [], []]
 
@@ -29,39 +29,10 @@ def getRect(disk):
     top = screenY - disk_height * disk['level']
     return pygame.Rect(left, top, disk['width'], disk_height-1)
 
-def animateMove(old_rect, new_rect):
-    pygame.draw.rect(screen, WHITE, old_rect)
-    pygame.draw.rect(screen, GREEN, new_rect)
-    pygame.display.flip()
-    time.sleep(0.5)
-
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT: 
-            sys.exit()
-
-def moveDisk(disk, column):        
-    popDisk(disk['column'])
-    
-    rect1 = getRect(disk)
-    rect2 = pygame.Rect(rect1)
-    rect2.top = 0
-
-    pushDisk(disk, column)
-    rect4 = getRect(disk)
-    rect3 = pygame.Rect(rect4)
-    rect3.top = 0
-
-    animateMove(rect1, rect2)
-    animateMove(rect2, rect3)
-    animateMove(rect3, rect4)
-
-for i in range(ndisks):
-    disk = {'width' : column_width * (ndisks - i) / ndisks}
+for i in range(N):
+    disk = {'width' : column_width * (N - i) / N}
     pushDisk(disk, 0)
     pygame.draw.rect(screen, GREEN, getRect(disk))
 
 pygame.display.flip()
-
-time.sleep(1)
-moveDisk(disks[0][-1], 2)
 time.sleep(3)
