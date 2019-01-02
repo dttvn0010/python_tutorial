@@ -11,7 +11,7 @@ Chương trình tính điểm trung bình của một lớp học
 
 ds_lop = []
 
-fi = open('diem_trungbinh_input.csv')
+fi = open('diem_trungbinh_input.csv', encoding='utf-8')
 for line in fi:
     hoten, diemhs1, diemhs2, diemhs3 = line.split(',')
     diemhs1 = int(diemhs1)
@@ -22,7 +22,7 @@ for line in fi:
 
 fi.close()
 
-fo = open('diem_trungbinh_output.csv', 'wt')
+fo = open('diem_trungbinh_output.csv', 'wt', encoding='utf-8')
 for hocsinh in ds_lop:
     hoten, diemhs1, diemhs2, diemhs3, diem_tb = hocsinh    
     line = '{}, {}, {}, {}, {: 1.1f}'.format(
