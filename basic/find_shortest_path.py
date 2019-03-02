@@ -1,4 +1,4 @@
-cities = ['A', 'B', 'C', 'D']
+points = ['A', 'B', 'C', 'D']
 
 distances = { 
            ('A', 'B') : 10,
@@ -8,20 +8,20 @@ distances = {
            ('C', 'D') : 5
         }        
 
-def find_shortest_path(c1, c2):
-    if c1 == c2:
-        return (0, c1)
+def find_shortest_path(p1, p2):
+    if p1 == p2:
+        return (0, p1)
     
     paths = []
     
-    for c in cities:
-        if (c1,c) in distances:
-            distance, route = find_shortest_path(c, c2)
+    for p in points:
+        if (p1, p) in distances:
+            route_length, route = find_shortest_path(p, p2)
                         
-            if distance >= 0 :
-                distance += distances[(c1,c)]
-                route = c1 + '->' + route
-                paths.append((distance, route))
+            if route_length >= 0 :
+                route_length += distances[(p1, p)]
+                route = p1 + '->' + route
+                paths.append((route_length, route))
     
     if len(paths) > 0:
         paths = sorted(paths)
