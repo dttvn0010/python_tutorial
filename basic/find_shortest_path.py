@@ -9,8 +9,8 @@ distances = {
         }        
 
 def find_shortest_path(p1, p2):
-    if p1 == p2:
-        return (0, p1)
+    if p1 == p2:                                                   # Nếu điểm đầu và điểm cuối trùng nhau
+        return (0, p1)                                             # Đường đi ngắn nhất có độ dài bằng 0 và gồm chính điểm đó
     
     paths = []                                                     # Danh sách tất cả các đường có thể đi từ p1 đến p2
     
